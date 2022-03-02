@@ -7,20 +7,25 @@ alias la="ls -la"
 update() {brew update && brew upgrade}
 
 # Open fav websites
-reddit() {open https://www.reddit.com}
+reddit() {open "https://www.reddit.com"}
 
 # Open www website
 www() {this=$@; open "https://www.$this"}
 
 # Open file directory
-work() {cd ~/OneDrive/work}
+work() {cd ~"/OneDrive/work"}
 
 # Open fav apps
 note() {open "/Applications/Microsoft OneNote.app"}
 outlook() {open "/Applications/Microsoft Outlook.app"}
+excel() {open "/Applications/Microsoft Excel.app"}
+finance() {open ~"/OneDrive/Documents/Finances.xlsx"}
 reason() {open "/Applications/Reason 9/Reason.app"}
 text() {open ~"/Applications/Chrome Apps.localized/Messages.app"}
 music() {open ~"/Applications/Chrome Apps.localized/YouTube Music.app"}
+
+# Open office
+office() {outlook; sleep 1; note; sleep 1; finance}
 
 # Search google
 google() {
