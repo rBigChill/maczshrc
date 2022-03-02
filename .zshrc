@@ -8,6 +8,7 @@ update() {brew update && brew upgrade}
 
 # Open fav websites
 reddit() {open "https://www.reddit.com"}
+github() {open "https://www.github.com"}
 
 # Open www website
 www() {this=$@; open "https://www.$this"}
