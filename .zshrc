@@ -16,6 +16,11 @@ push() {
 }
 status() {git status}
 
+# Open FI
+chase() {open "https://www.chase.com"}
+tbt() {open "https://tbtmyway.texasbankandtrust.com/login"}
+money() {chase; sleep 1; tbt; sleep 1; finance}
+
 # Open fav websites
 github() {open "https://www.github.com"}
 youtube() {open "https://www.youtube.com"}
@@ -58,7 +63,6 @@ office() {outlook; sleep 1; note; sleep 1; finance}
 google() {
     this=$@
     open "https://www.google.com/search?q=$this"
-    clear
 }
 
 # Loop
