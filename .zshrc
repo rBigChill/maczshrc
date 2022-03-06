@@ -6,6 +6,16 @@ alias la="ls -la"
 # Update shell
 update() {brew update && brew upgrade}
 
+# Git functions
+pull() {git pull}
+push() {
+    this=$@
+    git add -A; sleep 1;
+    git commit -m "$this"; sleep 1;
+    git push -u origin main; sleep 1;
+}
+status() {git status}
+
 # Open fav websites
 github() {open "https://www.github.com"}
 youtube() {open "https://www.youtube.com"}
@@ -15,7 +25,7 @@ facebook() {open "https://www.facebook.com"}
 insta() {open "https://www.instagram.com"}
 linked() {open "https://www.linkedin.com"}
 dev() {open "https://www.dev.to"}
-# Open socila media
+# Open social media
 social() {
     facebook; sleep 1;
     insta; sleep 1;
