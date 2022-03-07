@@ -7,6 +7,15 @@ alias la="ls -la"
 update() {brew update && brew upgrade}
 
 # Git functions
+init() {
+    this=$@
+    git init; sleep 1;
+    git add -A; sleep 1;
+    git commit -m "first commit"; sleep 1;
+    git branch -M main; sleep 1;
+    git remote add origin https://github.com/rBigChill/$this.git; sleep 1;
+    git push -u origin main; sleep 1;
+}
 pull() {git pull}
 push() {
     this=$@
