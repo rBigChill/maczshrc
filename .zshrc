@@ -3,6 +3,9 @@ PS1=$'\n:)~ '
 alias ll="ls -l"
 alias la="ls -la"
 
+# Print functions
+lf() {print -l ${(ok)functions}}
+
 # Update shell
 update() {brew update && brew upgrade}
 
