@@ -26,6 +26,10 @@ push() {
     git commit -m "$this"; sleep 1;
     git push -u origin main; sleep 1;
 }
+clone() {
+    this=$@
+    git clone https://github.com/$this
+}
 status() {git status}
 
 # Open FI
