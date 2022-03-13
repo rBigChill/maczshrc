@@ -1,6 +1,6 @@
 PS1=$'\n:)~ '
 
-alias ll="ls -l"
+alias ls="ls -l"
 alias la="ls -la"
 
 # Print functions
