@@ -10,6 +10,7 @@ lf() {print -l ${(ok)functions}}
 update() {brew update && brew upgrade}
 
 # Git functions
+# Git init
 init() {
     this=$@
     git init; sleep 1;
@@ -19,17 +20,21 @@ init() {
     git remote add origin https://github.com/rBigChill/$this.git; sleep 1;
     git push -u origin main; sleep 1;
 }
+# Git Pull
 pull() {git pull}
+# Git Push
 push() {
     this=$@
     git add -A; sleep 1;
     git commit -m "$this"; sleep 1;
     git push -u origin main; sleep 1;
 }
+# Git Clone
 clone() {
     this=$@
     git clone https://github.com/$this
 }
+# Git Status
 status() {git status}
 
 # Open fav websites
