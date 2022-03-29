@@ -39,7 +39,15 @@ status() {git status}
 
 # Open fav websites
 github() {open "https://www.github.com"}
-youtube() {open "https://www.youtube.com"}
+youtube() {
+    this=$@
+    if [[ -z $this ]]
+    then
+        open "https://www.youtube.com"
+    else
+        open "https://www.youtube.com/results?search_query=$this"
+    fi
+}
 reddit() {open "https://www.reddit.com"}
 twitter() {open "https://www.twitter.com"}
 facebook() {open "https://www.facebook.com"}
