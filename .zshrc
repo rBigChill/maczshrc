@@ -54,8 +54,10 @@ facebook() {open "https://www.facebook.com"}
 insta() {open "https://www.instagram.com"}
 linked() {open "https://www.linkedin.com"}
 dev() {open "https://www.dev.to"}
+tiktok() {open "https://www.tiktok.com"}
 # Open social media
 social() {
+    tiktok; sleep 1;
     facebook; sleep 1;
     insta; sleep 1;
     linked; sleep 1;
