@@ -83,7 +83,7 @@ music() {open ~"/Applications/Chrome Apps.localized/YouTube Music.app"}
 blink() {open "/Applications/Blink.app"}
 
 # Open office
-office() {outlook; sleep 1; note; sleep 1; finance}
+office() {outlook; sleep 1; note; sleep 1; finance; sleep 1; text}
 
 # Search google
 google() {
