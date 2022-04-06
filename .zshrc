@@ -81,6 +81,34 @@ text() {open ~"/Applications/Chrome Apps.localized/Messages.app"}
 music() {open ~"/Applications/Chrome Apps.localized/YouTube Music.app"}
 blink() {open "/Applications/Blink.app"}
 
+# Open reading
+Function kindle {open("https://read.amazon.com/kindle-library?")}
+Function audible {open("https://www.audible.com/library/titles?ref=a_hp_t1_navTop_pl0&pf_rd_p=333ba162-b3f0-48f7-9720-155151309526&pf_rd_r=Y2Q9W4TV1J68B48VEYPQ")}
+el {open("https://b-ok.cc/")}
+humble {open("https://www.humblebundle.com/?hmb_source=navbar")}
+fanatical {open("https://www.fanatical.com/en/")}
+lg {open("http://libgen.rs/")}
+# Open all reading
+read {
+    kindle; sleep 1;
+    audible; sleep 1;
+    el; sleep 1;
+    humble; sleep 1;
+    fanatical; sleep 1;
+    lg; sleep 1;
+}
+
+# Open learning
+udemy {open("https://www.udemy.com/home/my-courses/learning/")}
+coursera {open("https://www.coursera.org/")}
+wondrium {open("https://www.wondrium.com/")}
+# Open all learning
+learn {
+    udemy; sleep 1;
+    coursera; sleep 1;
+    learn; sleep 1;
+}
+
 # Open office
 office() {outlook; sleep 1; note; sleep 1; finance; sleep 1; text}
 
