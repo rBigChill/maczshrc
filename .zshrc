@@ -3,6 +3,8 @@ PS1=$'\n:)~ '
 alias ls="ls -l"
 alias la="ls -la"
 
+blue() {open -na "Google Chrome" --args --incognito "https://www.instagram.com/heathur_blu"}
+
 # Print functions
 lf() {print -l ${(ok)functions}}
 
