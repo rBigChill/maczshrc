@@ -43,7 +43,7 @@ status() {git status}
 github() {open "https://www.github.com"}
 youtube() {
     this=$@
-    if [[ -z $this ]]
+    if [ -z $this ]
     then
         open "https://www.youtube.com"
     else
