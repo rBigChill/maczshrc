@@ -1,7 +1,8 @@
 PS1=$'\n:)~ '
 
-alias ls="ls -l"
-alias la="ls -la"
+alias ll="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
 
 # Print functions
 lf() {print -l ${(ok)functions}}
