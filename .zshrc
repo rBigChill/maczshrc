@@ -100,14 +100,10 @@ reading() {
 }
 
 # Open learning
-udemy() {open "https://www.udemy.com/home/my-courses/learning/"}
 coursera() {open "https://www.coursera.org/"}
-wondrium() {open "https://www.wondrium.com/"}
 # Open all learning
 learn() {
-    udemy; sleep 1;
     coursera; sleep 1;
-    wondrium; sleep 1; 
 }
 
 # Open office
