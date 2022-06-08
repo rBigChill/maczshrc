@@ -10,6 +10,9 @@ lf() {print -l ${(ok)functions}}
 # Update shell
 update() {brew update && brew upgrade}
 
+# Connect to PI
+kali() {ssh -l kali 192.168.0.43}
+
 # Git functions
 # Git init
 init() {
