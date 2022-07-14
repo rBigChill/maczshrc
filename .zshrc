@@ -1,6 +1,6 @@
 PS1=$'\n:)~ '
 
-alias ll="ls -l"
+alias ll="pwd; ls -l"
 alias la="ls -a"
 alias lla="ls -la"
 
