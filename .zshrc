@@ -61,8 +61,8 @@ dev() {open "https://www.dev.to"}
 tiktok() {open "https://www.tiktok.com"}
 # Open social media
 social() {
-    youtube; sleep 1;
     github; sleep 1;
+    youtube; sleep 1;
     tiktok; sleep 1;
     facebook; sleep 1;
     insta; sleep 1;
