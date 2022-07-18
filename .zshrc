@@ -68,6 +68,8 @@ social() {
     dev; sleep 1;
     reddit; sleep 1
     twitter; sleep 1;
+    youtube; sleep 1;
+    github(); sleep 1;
 }
 
 # Open www website
@@ -84,15 +86,6 @@ finance() {open ~"/OneDrive/Documents/Finances.xlsx"}
 text() {open ~"/Applications/Chrome Apps.localized/Messages.app"}
 music() {open ~"/Applications/Chrome Apps.localized/YouTube Music.app"}
 blink() {open "/Applications/Blink.app"}
-
-# Open learning
-coursera() {open "https://www.coursera.org/"}
-udemy() {open "https://www.udemy.com/"}
-# Open all learning
-learn() {
-    coursera; sleep 1;
-    udemy; sleep 1;
-}
 
 # Open office
 office() {outlook; sleep 1; note; sleep 1; finance; sleep 1; text}
