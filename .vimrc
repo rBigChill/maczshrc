@@ -20,6 +20,7 @@ set backspace=indent,eol,start
 set vb t_vb=
 set ff=unix
 set noshowmode
+set completeopt-=preview
 
 call plug#begin('~/.vim/plugged')
 
